@@ -5,9 +5,9 @@ public class HibernateImpl implements BaseInterface {
 	/**
 	 * Uses Hibernate connection 
 	 */
-	public int createRecord(Person person, String connType) {
+	public String createRecord(Person person, String connType) {
 		// TODO Auto-generated method stub
-		return 1;
+		return "Hibernate conn";
 	}
 
 }

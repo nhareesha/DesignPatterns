@@ -5,9 +5,9 @@ public class JDBCImpl implements BaseInterface {
 	/**
 	 * Uses JDBC connector to connect to DB
 	 */
-	public int createRecord(Person person, String connType) {
+	public String createRecord(Person person, String connType) {
 		// TODO Auto-generated method stub
-		return 1;
+		return "JDBC Connection";
 	}
 
 }

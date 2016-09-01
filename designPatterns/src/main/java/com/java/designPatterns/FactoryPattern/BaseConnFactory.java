@@ -6,14 +6,18 @@ package com.java.designPatterns.FactoryPattern;
  *
  */
 public class BaseConnFactory {
+	private static final String JDBC = "JDBC";
+	private static final String HIBERNATE = "Hibernate";
 	private  BaseInterface base;
 	
 	public BaseInterface getConnection(String connType){
 		
-		if(connType!=null && connType.equals("Hibernate")){
-			return new HibernateImpl();
-		}else if(connType!=null && connType.equals("JDBC")){
-			return new JDBCImpl();
+		if(connType!=null && connType.equals(HIBERNATE)){
+			 base = new HibernateImpl();
+			 return base;
+		}else if(connType!=null && connType.equals(JDBC)){
+			 base = new JDBCImpl();
+			 return base;
 		}
 		return null;
 	}
