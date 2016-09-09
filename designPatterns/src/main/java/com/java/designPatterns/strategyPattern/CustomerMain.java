@@ -1,5 +1,13 @@
 package com.java.designPatterns.strategyPattern;
-
+/**
+ * This class demonstrate the use of strategy pattern
+ * Here there can be any number of potential customers who
+ * pay bill using credit or debit
+ * that means the the bill pay behavior changes at runtime depending on customer.
+ * That is where strategy pattern comes in for extracting the behavior that is capable of changing
+ * @author Hareesha
+ *
+ */
 public class CustomerMain {
 	private IBillPayment payment;
 	
